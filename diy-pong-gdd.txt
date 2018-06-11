@@ -1,0 +1,34 @@
+								###############################
+								#DIY Pong Game Design Document#
+								###############################
+
+
+Preliminary steps
+								
+1. Create repo for the project
+2. Clone repo
+3. Create new Unity project inside repo folder
+
+Game description
+
+Pong is a two-dimensional sports game that simulates table tennis. The player controls an in-game paddle by moving it vertically across the left or right side of the screen. They can compete against another player controlling a second paddle on the opposing side. Players use the paddles to hit a ball back and forth. The goal is for each player to reach eleven points before the opponent; points are earned when one fails to return the ball to the other.
+
+To-Do-List
+
+1. Create the objects (2 paddles and a ball)
+2. Setup a playground (background, walls )
+2. Make paddles move independently (w and s for player 1, up arrow and down arrow for player 2)
+3. Restrict the movement of the paddles according to the screen size
+4. Make the ball move from left to right
+5. Add physics to paddles and ball
+6. Make ball bounce off paddles and walls
+
+Future-To-Do-List
+
+1. Add score board
+2. Add main menu, options menu
+3. Add music, sfx
+4. Create assets in MagicaVoxel
+5. Add particle effects
+6. Implement narrow AI (player vs CPU)
+7. Add win screen, game over screen
