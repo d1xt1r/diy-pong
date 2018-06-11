@@ -537,6 +537,7 @@ GameObject:
   - component: {fileID: 1992762228}
   - component: {fileID: 1992762227}
   - component: {fileID: 1992762226}
+  - component: {fileID: 1992762230}
   m_Layer: 0
   m_Name: Left Paddle
   m_TagString: Untagged
@@ -605,12 +606,24 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1992762225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.47, y: -0.02, z: -0.032189097}
+  m_LocalPosition: {x: -8.44, y: 0, z: -0.032189097}
   m_LocalScale: {x: 0.22343673, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1992762230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1992762225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ffa83e1916e5874c85e2247daa5d55d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &2114571271
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,6 +635,7 @@ GameObject:
   - component: {fileID: 2114571274}
   - component: {fileID: 2114571273}
   - component: {fileID: 2114571272}
+  - component: {fileID: 2114571276}
   m_Layer: 0
   m_Name: Right Paddle
   m_TagString: Untagged
@@ -690,9 +704,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2114571271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.44, y: 0.03, z: -0.032189097}
+  m_LocalPosition: {x: 8.44, y: 0, z: -0.032189097}
   m_LocalScale: {x: 0.22343673, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2114571276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2114571271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48906071012fef34caa4157a01cc1299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
