@@ -13,7 +13,7 @@ Game description
 
 Pong is a two-dimensional sports game that simulates table tennis. The player controls an in-game paddle by moving it vertically across the left or right side of the screen. They can compete against another player controlling a second paddle on the opposing side. Players use the paddles to hit a ball back and forth. The goal is for each player to reach eleven points before the opponent; points are earned when one fails to return the ball to the other.
 
-To-Do-List
+Implemented features
 
 1. Create the objects (2 paddles and a ball)
 2. Setup a playground (background, walls )
@@ -22,13 +22,13 @@ To-Do-List
 4. Make the ball move from left to right
 5. Add physics to paddles and ball
 6. Make ball bounce off paddles and walls
+7. Add score board
 
-Future-To-Do-List
+To-Do-List
 
-1. Add score board
-2. Add main menu, options menu
-3. Add music, sfx
-4. Create assets in MagicaVoxel
-5. Add particle effects
-6. Implement narrow AI (player vs CPU)
-7. Add win screen, game over screen
+Add main menu, options menu
+Add music, sfx
+Create assets in MagicaVoxel
+Add particle effects
+Implement narrow AI (player vs CPU)
+Add win screen, game over screen
