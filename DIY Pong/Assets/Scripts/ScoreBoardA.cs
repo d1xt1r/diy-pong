@@ -14,7 +14,7 @@ public class ScoreBoardA : MonoBehaviour {
 	}
 
     void OnCollisionEnter2D(Collision2D collision) {
-        print("Collided");
+        //print("Collided");
         if (collision.gameObject.name == "Ball") {
             scoreA = scoreA + 1;
             textFieldA.text = "" + scoreA.ToString();

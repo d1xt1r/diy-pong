@@ -349,10 +349,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: d0f1b7c120a6e3847819e01dc2974915, type: 3}
-    m_FontSize: 90
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 9
+    m_MinSize: 3
     m_MaxSize: 90
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -610,6 +610,42 @@ Transform:
   m_Father: {fileID: 1568963597}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &617961024 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1180937495835864, guid: 5a6a8d0b9fe412d4fa6c8d11077a7142,
+    type: 2}
+  m_PrefabInternal: {fileID: 1036046139}
+--- !u!114 &617961029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 617961024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399470abaa9ab7a4e93b967af051d5d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreA: 0
+  textFieldA: {fileID: 1378733871}
+--- !u!1 &637084741 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1356474285308542, guid: 5a6a8d0b9fe412d4fa6c8d11077a7142,
+    type: 2}
+  m_PrefabInternal: {fileID: 1036046139}
+--- !u!114 &637084746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 637084741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d59750a8c49fc2439667dff0f35c172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreB: 0
+  textFieldB: {fileID: 363556411}
 --- !u!1 &972753283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,10 +1098,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: d0f1b7c120a6e3847819e01dc2974915, type: 3}
-    m_FontSize: 90
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 154
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1277,7 +1313,6 @@ GameObject:
   - component: {fileID: 1600654331}
   - component: {fileID: 1600654332}
   - component: {fileID: 1600654327}
-  - component: {fileID: 1600654333}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -1372,6 +1407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  speedMinMax: {x: 7, y: 15}
 --- !u!58 &1600654332
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1387,19 +1423,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.49999997
---- !u!114 &1600654333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1600654326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 399470abaa9ab7a4e93b967af051d5d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreA: 0
-  textFieldA: {fileID: 0}
 --- !u!1 &1992762225
 GameObject:
   m_ObjectHideFlags: 0
