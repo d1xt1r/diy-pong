@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Ball : MonoBehaviour {
 
     float speed; // Variable for speed of the ball
     public Vector2 speedMinMax; // Min and max speed based on the difficulty %
     Rigidbody2D ballRigidbody; // Variable for the reference of the Rigidbody of the ball
     Vector2 spawnDirection; // Variable for the random spawn direction
+    
 
     // Use this for initialization
     void Start () {
@@ -30,11 +32,5 @@ public class Ball : MonoBehaviour {
         }
 
         ballRigidbody.velocity = (spawnDirection * speed); // Modify the Rigidbody based on the direction multiplied by speed
-    }
-	
-	// Update is called once per frame
-	void FixedUpdate () {
-        
-        
     }
 }
