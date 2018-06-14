@@ -292,6 +292,7 @@ GameObject:
   - component: {fileID: 588940857}
   - component: {fileID: 588940856}
   - component: {fileID: 588940858}
+  - component: {fileID: 588940859}
   m_Layer: 5
   m_Name: PressSpace
   m_TagString: Untagged
@@ -307,7 +308,7 @@ RectTransform:
   m_GameObject: {fileID: 588940854}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7753716, y: 0.7753716, z: 0.7753716}
   m_Children: []
   m_Father: {fileID: 309332922}
   m_RootOrder: 1
@@ -447,7 +448,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77edce5f1f4f5354f958cba777a07cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pressSpaceText: {fileID: 588940856}
+--- !u!95 &588940859
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 588940854}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 464adca6c326b88478db85e9bb011512, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1492479038
 GameObject:
   m_ObjectHideFlags: 0
