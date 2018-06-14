@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Difficulty : MonoBehaviour { // Class that is not attached to an game objects. It will be called by the Ball script
 
-    static float timeToMaxDifficulty = 60; // After 60 seconds max difficluty will be reached
+    static float timeToMaxDifficulty = 30; // After 60 seconds max difficluty will be reached
 
     public static float GetDifficultyPercent() {
         //return 1; // Returns the max difficulty instantly

@@ -33,4 +33,14 @@ public class Ball : MonoBehaviour {
 
         ballRigidbody.velocity = (spawnDirection * speed); // Modify the Rigidbody based on the direction multiplied by speed
     }
+
+    void Update() {
+        ResetBallPosition();
+    }
+
+    void ResetBallPosition() {
+        if (Input.GetKeyDown(KeyCode.R)) {
+            transform.position = new Vector2(Random.Range(1,5), Random.Range(0, 1));
+        }
+    }
 }
