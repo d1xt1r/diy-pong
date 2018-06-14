@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pong.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/PlayerOneWins.unity
+    guid: 553c227d800ee3e4a998e029329b0ce8
+  - enabled: 1
+    path: Assets/Scenes/PlayerTwoWins.unity
+    guid: 42bb81ab55ee9bf4db919812245357cf
   m_configObjects: {}

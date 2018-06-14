@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreBoardB : MonoBehaviour {
 
@@ -11,13 +12,23 @@ public class ScoreBoardB : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         textFieldB.text = "" + scoreB.ToString();
-	}
+    }
+
+    void Update() {
+        PlayerOneWins();
+    }
 
     void OnCollisionEnter2D(Collision2D collision) {
         //print("Collided");
         if (collision.gameObject.name == "Ball") {
             scoreB = scoreB + 1;
             textFieldB.text = "" + scoreB.ToString();
+        }
+    }
+
+    void PlayerOneWins() {
+        if (scoreB >= 5) {
+            SceneManager.LoadScene(3);
         }
     }
 }
