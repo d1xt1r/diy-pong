@@ -19,5 +19,5 @@ EditorBuildSettings:
     guid: 553c227d800ee3e4a998e029329b0ce8
   - enabled: 1
     path: Assets/Scenes/PlayerTwoWins.unity
-    guid: 42bb81ab55ee9bf4db919812245357cf
+    guid: 60d7caa9c37f9984f98fe33053b66785
   m_configObjects: {}

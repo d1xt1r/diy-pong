@@ -28,7 +28,7 @@ public class ScoreBoardA : MonoBehaviour {
 
     void PlayerTwoWins() {
         if (scoreA >= 20) {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(3);
         }
     }
 
