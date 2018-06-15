@@ -8,20 +8,15 @@ public class Ball : MonoBehaviour {
     float speed; // Variable for speed of the ball
     public Vector2 speedMinMax; // Min and max speed based on the difficulty %
     Rigidbody2D ballRigidbody; // Variable for the reference of the Rigidbody of the ball
-    Vector2 originalPosition;
     Vector2 spawnDirection; // Variable for the random spawn direction
     
 
     // Use this for initialization
     void Start () {
-
-        Vector2 originalPosition = new Vector2(transform.position.x, transform.position.y);
-
         speed = Mathf.Lerp(speedMinMax.x, speedMinMax.y, Difficulty.GetDifficultyPercent()); // The Lerp value between min and max speed based on the difficulty.
 
         ballRigidbody = GetComponent<Rigidbody2D>(); // Reference to the Rigidbody of the ball
         
-
         int randomBallPosition = Random.Range(1, 5); // Generate random number from 1 to 4 and based on this random number spawn the ball at the following vectors
 
         if (randomBallPosition == 1) {
@@ -34,12 +29,12 @@ public class Ball : MonoBehaviour {
             spawnDirection = new Vector2(-1, 1);
         }
 
-         // Modify the Rigidbody based on the direction multiplied by speed
+        ballRigidbody.velocity = (spawnDirection * speed); // Modify the Rigidbody based on the direction multiplied by speed
     }
 
     void Update() {
         ResetBallPosition();
-        ballRigidbody.velocity = (spawnDirection * speed);
+        
     }
 
     void ResetBallPosition() {
