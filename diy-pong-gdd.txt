@@ -23,12 +23,13 @@ Implemented features
 5. Add physics to paddles and ball
 6. Make ball bounce off paddles and walls
 7. Add score board
+8. Add main menu, options menu
+9. Add win screen, game over screen
+10. Add music, sfx
+11. Add particle effects
 
 To-Do-List
 
-Add main menu, options menu
-Add music, sfx
-Create assets in MagicaVoxel
-Add particle effects
-Implement narrow AI (player vs CPU)
-Add win screen, game over screen
+Implement volume solution for WebGL version
+Implement pause button with volume slider, quit game
+Implement basic AI (player vs CPU)
