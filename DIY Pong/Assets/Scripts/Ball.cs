@@ -37,6 +37,12 @@ public class Ball : MonoBehaviour {
         
     }
 
+    private void OnCollisionEnter2D(Collision2D collision) {
+        Vector2 randomdisplacement = new Vector2(Random.Range(0f, 0.5f), Random.Range(0f, 0.5f));
+        print(randomdisplacement);
+        ballRigidbody.velocity = ballRigidbody.velocity + randomdisplacement;
+    }
+
     void ResetBallPosition() {
         if (Input.GetKeyDown(KeyCode.R)) {
             transform.position = new Vector2(-8, 4);
