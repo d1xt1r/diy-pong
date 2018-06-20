@@ -5,15 +5,14 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour {
 
-    float speed; // Variable for speed of the ball
-    public Vector2 speedMinMax; // Min and max speed based on the difficulty %
+    float speed = 10; // Variable for speed of the ball
+
     Rigidbody2D ballRigidbody; // Variable for the reference of the Rigidbody of the ball
     Vector2 spawnDirection; // Variable for the random spawn direction
     
 
     // Use this for initialization
     void Start () {
-        speed = Mathf.Lerp(speedMinMax.x, speedMinMax.y, Difficulty.GetDifficultyPercent()); // The Lerp value between min and max speed based on the difficulty.
 
         ballRigidbody = GetComponent<Rigidbody2D>(); // Reference to the Rigidbody of the ball
         
@@ -34,7 +33,6 @@ public class Ball : MonoBehaviour {
 
     void Update() {
         ResetBallPosition();
-        
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
